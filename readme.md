@@ -10,7 +10,7 @@ wraps the npm [request][request-url] package, in a [bluebird][bluebird-url] prom
 * [usage](#usage)
     * [getRequestAsBluebird( user_options, debug )](#getrequestasbluebird-user_options-debug-)
     * [default](#default)
-    * [with request-debug](#wtih-request-debug)
+    * [with request-debug](#with-request-debug)
 * [license](#license)
 
 ## installation
