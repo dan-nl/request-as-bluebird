@@ -17,9 +17,8 @@ describe( 'getRequestAsBluebird( user_options )', function () {
     return getRequestAsBluebird( 'https://google.com' )
       .then(
         function ( result ) {
-          expect( result.length ).be.equal( 2 );
-          expect( result[ 0 ] ).to.be.an( 'object' );
-          expect( result[ 1 ] ).to.be.a( 'string' );
+          expect( result.response ).to.be.an( 'object' );
+          expect( result.body ).to.be.a( 'string' );
         }
       );
   } );

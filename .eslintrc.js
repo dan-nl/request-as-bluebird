@@ -5,10 +5,7 @@ module.exports = {
     "extends": "eslint:recommended",
     "rules": {
         "accessor-pairs": "error",
-        "array-bracket-spacing": [
-            "error",
-            "always"
-        ],
+        "array-bracket-spacing": "error",
         "array-callback-return": "error",
         "arrow-body-style": "error",
         "arrow-parens": "error",
@@ -27,7 +24,10 @@ module.exports = {
                 "before": false
             }
         ],
-        "comma-style": "error",
+        "comma-style": [
+            "error",
+            "last"
+        ],
         "complexity": "error",
         "computed-property-spacing": [
             "error",
@@ -120,7 +120,7 @@ module.exports = {
         "no-lone-blocks": "error",
         "no-lonely-if": "error",
         "no-loop-func": "error",
-        "no-magic-numbers": "off",
+        "no-magic-numbers": "error",
         "no-mixed-operators": "error",
         "no-mixed-requires": "error",
         "no-multi-spaces": "error",
@@ -181,7 +181,7 @@ module.exports = {
         "object-curly-newline": "error",
         "object-curly-spacing": "error",
         "object-property-newline": "error",
-        "object-shorthand": "error",
+        "object-shorthand": "off",
         "one-var": "off",
         "one-var-declaration-per-line": "error",
         "operator-assignment": "error",
@@ -194,7 +194,7 @@ module.exports = {
         "prefer-rest-params": "error",
         "prefer-spread": "error",
         "prefer-template": "error",
-        "quote-props": "error",
+        "quote-props": "off",
         "quotes": [
             "error",
             "single"
@@ -205,7 +205,10 @@ module.exports = {
         "semi": "error",
         "semi-spacing": "error",
         "sort-imports": "error",
-        "sort-keys": "error",
+        "sort-keys": [
+            "error",
+            "asc"
+        ],
         "sort-vars": "error",
         "space-before-blocks": "error",
         "space-before-function-paren": "off",

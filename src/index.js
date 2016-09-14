@@ -25,7 +25,10 @@ function callRequest( resolve, reject, user_options ) {
         reject( err );
       }
 
-      resolve( [ response, body ] );
+      resolve( {
+        body: body,
+        response: response
+      } );
     }
   );
 }
@@ -33,8 +36,8 @@ function callRequest( resolve, reject, user_options ) {
 /**
  * promise wrapper for the npm request package
  *
- * wraps the npm request package, in a bluebird promise, resolving with an array containing the
- * [ response, body ] or rejecting with an `Error`
+ * wraps the npm request package, in a bluebird promise, resolving with an object containing the
+ * response and body or rejecting with an `Error`
  *
  * @link https://www.npmjs.com/package/request
  *

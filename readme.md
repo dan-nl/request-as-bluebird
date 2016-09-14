@@ -3,7 +3,7 @@
 
 promise wrapper for the npm request package
 
-wraps the npm [request][request-url] package, in a [bluebird][bluebird-url] promise, resolving with an array containing the `[ response, body ]` or rejecting with an `Error`; also allows you to turn on debugging using the npm [request-debug][request-debug-url] package.
+wraps the npm [request][request-url] package, in a [bluebird][bluebird-url] promise, resolving with an object containing the response and body or rejecting with an `Error`; also allows you to turn on debugging using the npm [request-debug][request-debug-url] package.
 
 ## table of contents
 * [installation](#installation)
@@ -35,12 +35,12 @@ var getRequestAsBluebird = require( 'request-as-bluebird' );
 getRequestAsBluebird( 'https://www.google.com' )
   .then(
     /**
-     * @param {Array} result
+     * @param {Object} result
      * @param {IncomingMessage} result.response
      * @param {string} result.body
      */
     function( result ) {
-      // handle success
+      // handle resolve
     }
   )
   .catch(
@@ -48,7 +48,7 @@ getRequestAsBluebird( 'https://www.google.com' )
      * @param {Error} err
      */
     function( err ) {
-      // handle error
+      // handle reject
     }
   );
 ```
@@ -60,12 +60,12 @@ var getRequestAsBluebird = require( 'request-as-bluebird' );
 getRequestAsBluebird( 'https://www.google.com', true )
   .then(
     /**
-     * @param {Array} result
+     * @param {Object} result
      * @param {IncomingMessage} result.response
      * @param {string} result.body
      */
     function( result ) {
-      // handle success
+      // handle resolve
     }
   )
   .catch(
@@ -73,7 +73,7 @@ getRequestAsBluebird( 'https://www.google.com', true )
      * @param {Error} err
      */
     function( err ) {
-      // handle error
+      // handle reject
     }
   );
 ```
