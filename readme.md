@@ -88,8 +88,8 @@ getRequestAsBluebird( 'https://www.google.com', true )
 [mit-license]: https://raw.githubusercontent.com/dan-nl/request-as-bluebird/master/license.txt
 [npm-image]: https://img.shields.io/npm/v/request-as-bluebird.svg
 [npm-url]: https://www.npmjs.com/package/request-as-bluebird
-[nsp-image]: https://nodesecurity.io/orgs/githubdan-nl/projects/790063a7-c987-4816-abce-d247b6111d25/badge
-[nsp-url]: https://nodesecurity.io/orgs/githubdan-nl/projects/790063a7-c987-4816-abce-d247b6111d25
+[nsp-image]: https://nodesecurity.io/orgs/githubdan-nl/projects/e86e2c13-b8bf-4448-9d19-a22d2d93d3d0/badge
+[nsp-url]: https://nodesecurity.io/orgs/githubdan-nl/projects/e86e2c13-b8bf-4448-9d19-a22d2d93d3d0
 [request-url]: https://www.npmjs.com/package/request
 [request-debug-url]: https://www.npmjs.com/package/request-debug
 [travis-image]: https://travis-ci.org/dan-nl/request-as-bluebird.svg?branch=master
