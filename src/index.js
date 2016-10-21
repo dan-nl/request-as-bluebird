@@ -10,6 +10,7 @@ var request = require( 'request' );
  * @param {Function} resolve
  * @param {Function} reject
  * @param {Object} user_options
+ * @returns {undefined}
  */
 function callRequest( resolve, reject, user_options ) {
   request(
@@ -19,6 +20,7 @@ function callRequest( resolve, reject, user_options ) {
      * @param {null|Error} err
      * @param {IncomingMessage} response
      * @param {string} body
+     * @returns {undefined}
      */
     function callback( err, response, body ) {
       if ( err ) {
@@ -43,7 +45,7 @@ function callRequest( resolve, reject, user_options ) {
  *
  * @param {string|Object} user_options
  * @param {boolean} [debug]
- * @returns {Promise}
+ * @returns {Promise.<{ body:string, response:IncomingMessage }>}
  */
 module.exports = function getRequestAsBluebird( user_options, debug ) {
   if ( debug === true ) {
@@ -54,6 +56,7 @@ module.exports = function getRequestAsBluebird( user_options, debug ) {
     /**
      * @param {Function} resolve
      * @param {Function} reject
+     * @returns {undefined}
      */
     function ( resolve, reject ) {
       callRequest.call( null, resolve, reject, user_options );
