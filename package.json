@@ -1,6 +1,6 @@
 {
   "name": "request-as-bluebird",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "promise wrapper for the npm request package",
   "author": "dan entous",
   "license": "MIT",
