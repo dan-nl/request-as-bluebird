@@ -31,7 +31,7 @@
     "request-debug": "0.2.0"
   },
   "devDependencies": {
-    "chai": "3.5.0",
+    "chai": "4.1.2",
     "coveralls": "2.11.12",
     "eslint": "3.5.0",
     "istanbul": "0.4.5",
