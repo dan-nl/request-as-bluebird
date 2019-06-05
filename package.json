@@ -26,15 +26,15 @@
     "test": "mocha"
   },
   "dependencies": {
-    "bluebird": "^3.5.1",
-    "request": "^2.87.0",
+    "bluebird": "^3.5.5",
+    "request": "^2.88.0",
     "request-debug": "^0.2.0"
   },
   "devDependencies": {
-    "chai": "^4.1.2",
-    "coveralls": "^3.0.1",
-    "eslint": "^4.19.1",
+    "chai": "^4.2.0",
+    "coveralls": "^3.0.3",
+    "eslint": "^5.16.0",
     "istanbul": "^0.4.5",
-    "mocha": "^5.2.0"
+    "mocha": "^6.1.4"
   }
 }
